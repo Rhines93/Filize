@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/parentFolder"
+            android:text="P"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+
+        <Button
+            android:id="@+id/refresh"
+            android:text="R"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:id="@+id/pathOutput"
+            android:layout_width="wrap_content"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginVertical="8dp"/>
+
+        <Button
+            android:id="@+id/newFolder"
+            android:text="New"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Delete"
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:visibility="gone"
+            android:text="Rename"
+            android:id="@+id/rename"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/Copy"
+            android:text="Copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/Paste"
+            android:text="Paste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
